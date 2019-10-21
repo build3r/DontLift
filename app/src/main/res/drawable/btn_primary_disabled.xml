@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by Shabaz Ahmed at AI Foundry on 7/10/19 12:30 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 7/10/19 12:30 PM
+  ~  */
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+    <corners android:radius="8dp" />
+
+    <solid android:color="@color/primaryGreenDisabledOnion" />
+
+</shape>

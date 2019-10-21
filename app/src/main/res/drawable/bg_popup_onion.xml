@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Shabaz Ahmed at AI Foundry on 11/9/19 7:41 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 11/9/19 7:41 PM
+  ~  */
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+    <corners android:radius="8dp" />
+
+    <solid android:color="@android:color/white" />
+
+</shape>

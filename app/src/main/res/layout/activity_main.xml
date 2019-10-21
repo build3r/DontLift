@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/read_btn"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Read"
+        app:layout_constraintEnd_toStartOf="@+id/broadcast_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nearby_send"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Test BLE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/show_notification"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/broadcast_btn"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Kudos"
+        app:layout_constraintEnd_toStartOf="@+id/show_notification"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/read_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/show_notification"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Notify"
+        app:layout_constraintEnd_toStartOf="@+id/nearby_send"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/broadcast_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/end_ride"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="End Ride"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_text"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/read_btn"
+        app:layout_constraintStart_toStartOf="@+id/read_btn"
+        app:layout_constraintTop_toBottomOf="@+id/read_btn" />
+
+    <TextView
+        android:id="@+id/dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/nearby_send"
+        app:layout_constraintStart_toEndOf="@+id/broadcast_btn"
+        app:layout_constraintTop_toBottomOf="@+id/show_notification" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
